@@ -1,0 +1,21 @@
+{
+  "name": "medievales2023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch ./styles.scss:./styles.css",
+    "prefix":"postcss ./styles.css --use autoprefixer -d ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludo046/medievales2023.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ludo046/medievales2023/issues"
+  },
+  "homepage": "https://github.com/ludo046/medievales2023#readme"
+  
+}

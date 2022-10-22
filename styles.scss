@@ -1,0 +1,78 @@
+@import "./sass/utils/mixins";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "abel", Arial, Helvetica, sans-serif;
+  }
+
+nav{
+    position: relative;
+    width: 100%;
+    img{
+        width: 100%;
+    }
+    .title{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 50px;
+        background-color: rgba($color: #5b5b5b, $alpha: 0.5);
+        align-items: center;
+        h1{
+            @include text_title;
+            color: white;
+            border: none;
+        }
+    }
+}
+.formule_bloc{
+    h2{
+        @include text_title;
+        .green{
+            color: green;
+        }
+    }
+    .card_bloc_parrainage{
+        @include card_flex;
+        .card_parrainage{
+            width: 350px;
+            height: 350px;
+            img{    
+                width: 100%;
+                height: 300px;
+                object-fit: contain;
+            }
+        }
+    }
+    .card_bloc_sponsort{
+        @include card_flex;
+        .card_sponsort{
+            width: 250px;
+            height: 250px;
+            img{    
+                width: 100%;
+                height: 300px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+.formule_bloc_amis{
+    h2{
+        @include text_title;
+    }
+    .card_bloc_amis{
+        @include card_flex;
+        .card_amis{
+            width: 50%;
+            height: 70px;
+            margin-bottom: 20px;
+            h3, p{
+                margin-left: 50px;
+            }
+        }
+    }
+}
